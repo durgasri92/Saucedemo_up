@@ -2,22 +2,25 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class ProductPage extends BasePage {
 
 	String Pagename = "//span[@class='title']";
-	By prodname = By.xpath("//div[@class='inventory_item_name'][1]");
-	By prodprice = By.xpath("//div[@class='inventory_item_price'][1]");
 
-	By Addtocart = By.name("add-to-cart-sauce-labs-backpack");
+	By prodname = By.xpath("//div[contains(text(),'Sauce Labs Backpack')]");
+	By prodprice = By.xpath("//div[@class='inventory_item_price']");
 
-	public ProductPage(WebDriver driver) {
+	By Addtocart = By.xpath("//button[@name='add-to-cart-sauce-labs-backpack']");
+	By cart = By.xpath("//a[@class='shopping_cart_link']");
+
+	public ProductPage(ThreadLocal<WebDriver> driver) {
 		super(driver);
-		// TODO Auto-generated constructor
+		PageFactory.initElements(driver.get(), this);
 	}
 
-	public boolean verifyPageDisplayedIsCorrect(String expectedPagename) {
-		By pageNameFullXpath = By.xpath(String.format(Pagename, expectedPagename));
+	public boolean verifyPageDisplayedIsCorrect(String expectedUsername) {
+		By pageNameFullXpath = By.xpath(String.format(Pagename, expectedUsername));
 
 		return isElementPresent(pageNameFullXpath);
 	}
@@ -35,4 +38,7 @@ public class ProductPage extends BasePage {
 		clickElement(Addtocart);
 	}
 
+	public void clickoncart() {
+		clickElement(cart);
+	}
 }

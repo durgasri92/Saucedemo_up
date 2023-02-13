@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
@@ -9,9 +10,9 @@ public class LoginPage extends BasePage {
 	By passwordTextbox = By.id("password");
 	By loginbtn = By.id("login-button");
 
-	public LoginPage(WebDriver driver) {
+	public LoginPage(ThreadLocal<WebDriver> driver) {
 		super(driver);
-		// PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver.get(), this);
 	}
 
 	public void logintoApplication(String Username, String Password) {
