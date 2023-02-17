@@ -13,20 +13,18 @@ public class DataUtils {
 		String result = "unable to access data";
 		String datFilePath = "no test data file provided ";
 
-		if (null == System.getProperty("env")) {
-			datFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator
-					+ "TestDataStage.xlsx";
-
-		} else if (System.getProperty("env").toLowerCase().trim().equals("prod")) {
-			datFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator
-					+ "TestDataProd.xlsx";
-		}
-
-		else {
-			datFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator
-					+ "TestDataStage.xlsx";
-		}
-
+		/*
+		 * if (null == System.getProperty("env")) { datFilePath =
+		 * System.getProperty("user.dir") + File.separator + "resources" +
+		 * File.separator + "TestDataStage.xlsx";
+		 * 
+		 * } else if (System.getProperty("env").toLowerCase().trim().equals("prod")) {
+		 * datFilePath = System.getProperty("user.dir") + File.separator + "resources" +
+		 * File.separator + "TestDataProd.xlsx"; }
+		 * 
+		 * else { datFilePath = System.getProperty("user.dir") + File.separator +
+		 * "resources" + File.separator + "TestDataStage.xlsx"; }
+		 */
 		datFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator
 				+ "TestDataStage.xlsx";
 

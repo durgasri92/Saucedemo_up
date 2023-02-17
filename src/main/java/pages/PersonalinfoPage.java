@@ -9,7 +9,7 @@ public class PersonalinfoPage extends BasePage {
 	By FNameTextbox = By.name("firstName");
 	By LNameTextbox = By.name("lastName");
 	By PCodeTextbox = By.id("postal-code");
-	By Cntinue = By.id("continue");
+	By Cntinue = By.xpath("//input[@id='continue']");
 
 	public void PersonalInformation(String FirstName, String LastName, String PostalCode) {
 		setText(FNameTextbox, FirstName);
@@ -25,12 +25,7 @@ public class PersonalinfoPage extends BasePage {
 
 	public void clickcontinuebutton() {
 		clickElement(Cntinue);
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 	}
 
 }

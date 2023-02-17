@@ -41,4 +41,5 @@ public class ProductPage extends BasePage {
 	public void clickoncart() {
 		clickElement(cart);
 	}
+
 }
