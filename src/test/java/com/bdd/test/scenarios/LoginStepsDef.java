@@ -29,7 +29,8 @@ public class LoginStepsDef extends BaseTest1 {
 	}
 
 	@When("The user enter the {string} in username field and {string} in password field and clicks on login button")
-	public void Login(String user, String pass) {
+
+	public void login(String user, String pass) {
 
 		loginPage.logintoApplication(user, pass);
 

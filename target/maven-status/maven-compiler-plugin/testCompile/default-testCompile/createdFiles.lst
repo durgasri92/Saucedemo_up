@@ -1,3 +1,5 @@
 testcases/LoginTest.class
+com/bdd/test/scenarios/LoginStepsDef.class
 testcases/CheckoutTest.class
-testcases/BaseTest.class
+com/bdd/runners/LoginModuleRunner.class
+testcases/BaseTest1.class

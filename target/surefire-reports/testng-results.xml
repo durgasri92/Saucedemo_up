@@ -2,38 +2,55 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="E2E test Suite" duration-ms="13483" started-at="2023-02-16T09:16:37 UTC" finished-at="2023-02-16T09:16:50 UTC">
+  <suite name="E2E Test Suite" duration-ms="4226" started-at="2023-02-19T07:41:07 UTC" finished-at="2023-02-19T07:41:11 UTC">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@22a67b4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="E2E Test" duration-ms="13483" started-at="2023-02-16T09:16:37 UTC" finished-at="2023-02-16T09:16:50 UTC">
-      <class name="testcases.CheckoutTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.CheckoutTest@27a5f880]" name="setup" is-config="true" duration-ms="3285" started-at="2023-02-16T09:16:37 UTC" finished-at="2023-02-16T09:16:40 UTC">
+    <test name="E2E Tests" duration-ms="4226" started-at="2023-02-19T07:41:07 UTC" finished-at="2023-02-19T07:41:11 UTC">
+      <class name="com.bdd.runners.LoginModuleRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.bdd.runners.LoginModuleRunner@22a67b4]" name="setUpClass" is-config="true" duration-ms="127" started-at="2023-02-19T07:41:07 UTC" finished-at="2023-02-19T07:41:07 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Paymentpg()[pri:0, instance:testcases.CheckoutTest@27a5f880]" name="Paymentpg" duration-ms="10061" started-at="2023-02-16T09:16:40 UTC" finished-at="2023-02-16T09:16:50 UTC">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@22a67b4]" name="runScenario" duration-ms="3945" started-at="2023-02-19T07:41:07 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-19T07:41:11 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add the product and give personal info and make the payment to order the product successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout Module"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Paymentpg -->
-        <test-method status="PASS" signature="cleanupActivities()[pri:0, instance:testcases.CheckoutTest@27a5f880]" name="cleanupActivities" is-config="true" duration-ms="102" started-at="2023-02-16T09:16:50 UTC" finished-at="2023-02-16T09:16:50 UTC">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.bdd.runners.LoginModuleRunner@22a67b4]" name="runScenario" duration-ms="3141" started-at="2023-02-19T07:41:07 UTC" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-19T07:41:10 UTC">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify login is successful"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Module"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanupActivities -->
-      </class> <!-- testcases.CheckoutTest -->
-      <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.LoginTest@394e1a0f]" name="setup" is-config="true" duration-ms="3278" started-at="2023-02-16T09:16:37 UTC" finished-at="2023-02-16T09:16:40 UTC">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.bdd.runners.LoginModuleRunner@22a67b4]" name="tearDownClass" is-config="true" duration-ms="73" started-at="2023-02-19T07:41:11 UTC" finished-at="2023-02-19T07:41:11 UTC">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTest@394e1a0f]" name="login" duration-ms="5797" started-at="2023-02-16T09:16:40 UTC" finished-at="2023-02-16T09:16:46 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="cleanupActivities()[pri:0, instance:testcases.LoginTest@394e1a0f]" name="cleanupActivities" is-config="true" duration-ms="107" started-at="2023-02-16T09:16:46 UTC" finished-at="2023-02-16T09:16:46 UTC">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanupActivities -->
-      </class> <!-- testcases.LoginTest -->
-    </test> <!-- E2E Test -->
-  </suite> <!-- E2E test Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.bdd.runners.LoginModuleRunner -->
+    </test> <!-- E2E Tests -->
+  </suite> <!-- E2E Test Suite -->
 </testng-results>

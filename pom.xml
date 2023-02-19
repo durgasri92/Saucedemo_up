@@ -19,6 +19,16 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemProperties>
+						<property>
+							<name>env</name>
+							<value>stage</value>
+						</property>
+						<property>
+							<name>dataproviderthreadcount</name>
+							<value>${threadCount}</value>
+						</property>
+					</systemProperties>
 					</configuration>
 					</plugin>
 				
@@ -40,7 +50,7 @@
                             <!-- output directory for the generated report -->
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <!-- optional, defaults to outputDirectory if not specified -->
-                            <inputDirectory>${project.build.directory}/jsonReports</inputDirectory>
+                         
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
@@ -66,7 +76,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.6.0</version>
+    <version>3.141.59</version>
 </dependency>
      
 
